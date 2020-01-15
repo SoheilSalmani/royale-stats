@@ -9,10 +9,10 @@ A website to visualize statistical data from Clash Royale. The website uses Roya
 Data that does not come from RoyaleAPI is stored in JSON files (in the `src/json/` directory). To import them in MongoDB, use the following commands :
 
 ```
-$ mongoimport --db=royale_stats --collection=menu --file=menu.json --jsonArray --maintainInsertionOrder
-$ mongoimport --db=royale_stats --collection=content --file=content.json
-$ mongoimport --db=royale_stats --collection=cards_icons --file=cards-icons.json
-$ mongoimport --db=royale_stats --collection=other_icons --file=other-icons.json
+$ mongoimport --db=royale_stats --collection=menu --file=src/json/menu.json --jsonArray --maintainInsertionOrder
+$ mongoimport --db=royale_stats --collection=content --file=src/json/content.json
+$ mongoimport --db=royale_stats --collection=cards_icons --file=src/json/cards-icons.json
+$ mongoimport --db=royale_stats --collection=other_icons --file=src/json/other-icons.json
 ```
 
 ## Use your RoyaleAPI developer key
