@@ -1,6 +1,6 @@
 # Royale Stats
 
-A website that displays statistical data from Clash Royale. The website uses RoyaleAPI.
+A website to visualize statistical data from Clash Royale. The website uses RoyaleAPI.
 
 **Note:** The endpoint `/popular/decks` has been removed in RoyaleAPI v3. As a result, the Top Decks section no longer displays anything. In addition, we have limited the statistics on US players since the API no longer retrieves global data.
 
