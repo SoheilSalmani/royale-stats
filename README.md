@@ -12,8 +12,20 @@ Data that does not come from RoyaleAPI is stored in JSON files (in the `src/json
 $ mongoimport --db=royale_stats --collection=menu --file=menu.json --jsonArray --maintainInsertionOrder
 $ mongoimport --db=royale_stats --collection=content --file=content.json
 $ mongoimport --db=royale_stats --collection=cards_icons --file=cards-icons.json
-$ mongoimport --db=royale_stats --collection=other_icons --file=other-icons.jso
+$ mongoimport --db=royale_stats --collection=other_icons --file=other-icons.json
+```
+
+## Use your RoyaleAPI developer key
+
+Insert your RoyaleAPI developer key in the `server.js` file, line 150 :
+
+```javascript
+const token = 'your-key';
 ```
 
 ## Screenshots
 
+![Home page](https://github.com/SoheilSalmani/royale-stats/blob/master/screenshots/home.png)
+![Cards page](https://github.com/SoheilSalmani/royale-stats/blob/master/screenshots/cards.png)
+![Top Players page](https://github.com/SoheilSalmani/royale-stats/blob/master/screenshots/top-players.png)
+![Top Clans page](https://github.com/SoheilSalmani/royale-stats/blob/master/screenshots/top-clans.png)
