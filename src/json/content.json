@@ -1,0 +1,11 @@
+{  
+    "jumbotron": {
+        "title": "Welcome to Royale Stats!",
+        "subtitle": "Royale Stats is a site providing statistical data about the game <i>Clash Royale</i>.",
+        "text": "Do you want to consult the most popular decks? Press the button below.",
+        "link": {
+            "value": "Go to <i>Top Decks</i>",
+            "href": "/top-decks"
+        }
+    }
+}

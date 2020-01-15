@@ -1,0 +1,27 @@
+[  
+    {
+        "name": "home",
+        "label": "Home",
+        "href": "/"
+    },
+    {
+        "name": "cards",
+        "label": "Cards",
+        "href": "/cards"
+    },
+    {
+        "name": "top-decks",
+        "label": "Top Decks",
+        "href": "/top-decks"
+    },
+    {
+        "name": "top-players",
+        "label": "Top Players",
+        "href": "/top-players"
+    },
+    {
+        "name": "top-clans",
+        "label": "Top Clans",
+        "href": "/top-clans"
+    }
+]

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap.css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Josefin+Sans:400,700" rel="stylesheet" />
+    <!-- Titre -->
+    <title></title>
+</head>
+<body>
+    <!-- Conteneur principal -->
+    <div id="wrapper" class="d-flex flex-column mb-4">
+        <!-- Barre de navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light mb-4 shadow bg-white">
+            <h1 class="d-flex mb-0"><a class="navbar-brand" href="/">Royale Stats</a></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto" id="menu"></ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Player Tag (e.g. YRQ9UPLP)" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <!-- Informations du joueur -->
+        <section id="player-infos" class="container-fluid">
+            <div class="row px-4">
+                <h2 class="h5 mb-4 text-color-2 col-lg-12">Player Details</h2>
+            </div>
+            <div class="row px-4">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card shadow pb-3 mb-4" id="player-profile">
+                                <div class="card-header py-3">
+                                    <h6 class="h3 text-center m-0 font-weight-bold text-color-1 name"></h6>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text rank text-center text-dark"></p>
+                                    <p class="card-text trophies text-center text-dark"></p>
+                                    <p class="card-text arena-name text-center text-dark"></p>
+                                    <p class="card-text arena text-center text-dark mb-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="card shadow pb-3 mb-4" id="player-clan">
+                                <div class="card-header py-3">
+                                    <h6 class="h3 text-center m-0 font-weight-bold text-color-1 name"></h6>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text badge-clan text-center text-dark"></p>
+                                    <p class="card-text donations text-center text-dark"></p>
+                                    <p class="card-text donations-received text-center text-dark"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card shadow mb-4" id="player-deck">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-color-1">Current Deck</h6>
+                                    <div class="card-body">
+                                        <p class="card-text current-deck text-center text-dark"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card shadow mb-4" id="player-cards">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-color-1">Cards</h6>
+                                    <div class="card-body"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card shadow mb-4" id="player-stats">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-color-1">Stats</h6>
+                                    <div class="card-body">
+                                        <p class="card-text level text-center text-dark"></p>
+                                        <p class="card-text cards-found text-center text-dark"></p>
+                                        <p class="card-text max-trophies text-center text-dark"></p>
+                                        <p class="card-text clan-cards-collected text-center text-dark"></p>
+                                        <p class="card-text tournament-cards-won text-center text-dark"></p>
+                                        <p class="card-text three-crown-wins text-center text-dark"></p>
+                                        <p class="card-text challenge-max-wins text-center text-dark"></p>
+                                        <p class="card-text challenge-cards-won text-center text-dark"></p>
+                                        <p class="card-text total-donations text-center text-dark mb-0"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card shadow mb-4" id="player-games">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-color-1">Games</h6>
+                                    <div class="card-body">
+                                        <p class="card-text total text-center text-dark"></p>
+                                        <p class="card-text tournament-games text-center text-dark"></p>
+                                        <p class="card-text wins text-center text-dark"></p>
+                                        <p class="card-text war-day-wins text-center text-dark"></p>
+                                        <p class="card-text wins-percent text-center text-dark"></p>
+                                        <p class="card-text losses text-center text-dark"></p>
+                                        <p class="card-text losses-percent text-center text-dark"></p>
+                                        <p class="card-text draws text-center text-dark"></p>
+                                        <p class="card-text draws-percent text-center text-dark mb-0"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row px-4">
+                
+            </div>
+        </section>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Socket.IO -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="/js/player.js"></script>
+</body>
+</html>

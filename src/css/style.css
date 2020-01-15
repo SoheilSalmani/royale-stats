@@ -1,0 +1,190 @@
+/**
+ * GÉNÉRAL
+ */
+
+body {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #858796;
+    text-align: left;
+    background-color: #F8F9FC;
+}
+
+.spinner-border {
+    transition: opacity 1s ease-in-out;
+}
+
+#wrapper > *:not(:first-child) {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#menu {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.jumbotron {
+    background-color: rgb(0, 0, 0, 0.03) !important;
+}
+
+.form-control {
+    min-width: 250px;
+}
+
+h1 {
+    font-family: 'Bungee Inline', cursive;
+}
+
+.h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+th {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+td, th {
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+#wrapper {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+table {
+    border-radius: 0.6rem;
+    overflow: hidden;
+}
+
+a.btn-primary, button.btn-primary {
+    background-color: #B72B0D;
+    opacity: 0.8; 
+    color: white !important;
+    border: none;
+}
+
+a.btn-primary:hover, button.btn-primary {
+    background-color: #B72B0D !important;
+    opacity: 1;
+}
+
+.badge {
+    position: relative;
+    top: -3px;
+}
+
+/**
+ * COULEURS ET OMBRES
+ */
+
+ .text-color-1 {
+    color: #B72B0D;
+}
+
+.bg-color-1 {
+    background-color: #B72B0D;
+}
+
+.text-color-2 {
+    color: #027999;
+}
+
+.bg-color-2 {
+    background-color: #005A7D;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 .15rem 1.75rem 0 rgba(91, 101, 207, 0.25);
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.25);
+}
+
+.text-gray-800 {
+    color: #5A5C69;
+}
+
+/**
+ * BARRE DE NAVIGATION
+ */
+
+.navbar {
+    padding-left: calc(1.5rem + 15px);
+    padding-right: calc(1.5rem + 15px);
+}
+
+.navbar-light a {
+    color: #B72B0D !important;
+    opacity: 0.8 !important;
+}
+
+.navbar a:hover {
+    color: #B72B0D !important;
+    opacity: 1 !important;
+}
+
+/**
+ * ?????????????
+ */
+
+#cards-list td,
+#cards-list th {
+    text-align: center;
+}
+
+#popular-decks-list img {
+    width: 60px;
+}
+
+#decks-popularity .label-bar,
+#cards-usage .label-bar {
+    display: flex;
+    margin-bottom: 3px;
+    align-items: center;
+}
+
+#decks-popularity .label-bar:last-child,
+#cards-usage .label-bar:last-child {
+    display: flex;
+    margin-bottom: 0;
+}
+
+#decks-popularity .label {
+    flex: 0 0 75px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#cards-usage .label {
+    flex: 0 0 200px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#decks-popularity .bar-container,
+#cards-usage .bar-container {
+    flex: 1 1 auto;
+}
+
+#decks-popularity .bar,
+#cards-usage .bar {
+    text-align: right;
+    padding: 10px 15px;
+    color: white;
+    background-color: tomato;
+}
+
+#top-players > div {
+    display: flex;
+}
+
+#top-players .card {
+    flex: 0 0 30%;
+    text-align: center;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap.css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Josefin+Sans:400,700" rel="stylesheet" />
+    <!-- Titre -->
+    <title>Cards | Royale Stats</title>
+</head>
+<body>
+    <!-- Conteneur principal -->
+    <div id="wrapper" class="d-flex flex-column mb-4">
+        <!-- Barre de navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light mb-4 shadow bg-white">
+            <h1 class="d-flex mb-0"><a class="navbar-brand" href="/">Royale Stats</a></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto" id="menu"></ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Player Tag (e.g. YRQ9UPLP)" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <!-- Statistiques des cartes -->
+        <section id="statistics" class="container-fluid">
+            <div class="row px-4">
+                <h2 class="h5 mb-4 text-color-2 col-lg-12">Statistics</h2>
+            </div>
+            <div class="row px-4">
+                <div class="col-lg-6">
+                    <div class="card shadow mb-4" id="rarity-stats">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-color-1">Rarity</h6>
+                            <div class="card-body"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card shadow mb-4" id="type-stats">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-color-1">Type</h6>
+                            <div class="card-body"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Toutes les cartes-->
+        <section id="all-cards" class="container-fluid">
+            <div class="row px-4">
+                <h2 class="h5 mb-4 text-color-2 col-lg-12">All Cards</h2>
+            </div>
+            <div class="row px-4">
+                <div class="col-lg-12">
+                    <table class="table table-bordered table-striped shadow text-gray-800">
+                        <thead class="thead-white text-color-1">
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Elixir</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Rarity</th>
+                                <th scope="col">Arena</th>
+                                <th scope="col">Description</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Socket.IO -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="/js/cards.js"></script>
+</body>
+</html>
