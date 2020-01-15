@@ -29,3 +29,4 @@ const token = 'your-key';
 ![Cards page](https://github.com/SoheilSalmani/royale-stats/blob/master/screenshots/cards.png)
 ![Top Players page](https://github.com/SoheilSalmani/royale-stats/blob/master/screenshots/top-players.png)
 ![Top Clans page](https://github.com/SoheilSalmani/royale-stats/blob/master/screenshots/top-clans.png)
+![Random player page](https://github.com/SoheilSalmani/royale-stats/blob/master/screenshots/random-player-page.png)
